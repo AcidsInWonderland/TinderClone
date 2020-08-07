@@ -25,7 +25,7 @@ public class Database {
         Image[] img = new Image[3];
         try {
             //fr = new FileReader("profiles.csv");
-            br = new BufferedReader(new FileReader("profiles.csv"));//fr);
+            br = new BufferedReader(new FileReader("../bin/profiles.csv"));//fr);
             br.readLine();
             while ((row = br.readLine()) != null) {
                 String[] r = row.split(",");

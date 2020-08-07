@@ -11,17 +11,17 @@ public class TinderApp{
         
         //userData.readCSV();
 
-        System.out.println("Please enter your preference: ");
+        System.out.println("Please enter your gender preference: ");
         String pref = input.nextLine();
         
         //swipe.setPreference(pref);
-        System.out.println("Loading Up profiles for you:");
+        System.out.println("Looking up profiles for you:");
         swipe = new TinderSwipe(pref);
         
         String ans; Profile potential;
         
         do{
-            System.out.println("What do you think of - Choose :(R)ight/ (L)eft/ (Q)uit) ");
+            System.out.println("What do you think of - Choose:(R)ight - yes/ (L)eft - no/ (Q)uit) ");
             potential = swipe.getNext();
             System.out.println(potential);
             ans = input.nextLine();

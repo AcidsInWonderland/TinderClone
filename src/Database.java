@@ -82,7 +82,7 @@ public class Database {
             br.close();
             fr.close();
         } catch (Exception e) {
-            Sytetem.out.print("Error writeCSV" + e);
+            System.out.print("Error writeCSV" + e);
         }
     }
 

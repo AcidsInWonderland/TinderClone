@@ -8,24 +8,18 @@ public class Database {
     protected ArrayList<Profile> userPreferences = new ArrayList<Profile>();
     private ArrayList<Profile> allPreferences = new ArrayList<Profile>();
 
-    private String path;
-    private String npath;
-
-    private FileWriter Write;
-    private BufferedReader Read;
     private File swipes;
 
     public Database(){ }
 
     public void readCSV(){
-        FileReader fr;
         BufferedReader br;
         String row = null;
         Profile p;
         Image[] img = new Image[3];
         try {
             //fr = new FileReader("profiles.csv");
-            br = new BufferedReader(new FileReader("../bin/profiles.csv"));//fr);
+            br = new BufferedReader(new FileReader("./bin/profiles.csv"));//fr);
             br.readLine();
             while ((row = br.readLine()) != null) {
                 String[] r = row.split(",");

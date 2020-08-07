@@ -34,6 +34,7 @@ public class TinderApp{
                 continue;
             }
         }while (!ans.equals("Q"));
+        System.out.println("See you soon!");
         input.close();   
         
     }

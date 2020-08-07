@@ -19,10 +19,15 @@ public class TinderSwipe {
     }
 
 
-	public Profile getNext() {
+	public Profile getNext(){
+        if(tracker < preference.length-1){
         tracker ++;
         current = preference[tracker];
         return current;
+        } else {
+            System.out.println("Out of potential matches.");
+            return null;
+        }
 	}
 	public void right() {
         rightSwipes[right] = current;
